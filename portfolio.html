@@ -5,14 +5,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-  
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-    <h1>Fullstack Developer</h1>
-    <h2>Arundhati Vibhute</h2>
-    <img src="developer_icon.png" alt="Developer Icon" style="width: 50px; height: 50px;">
-    <section>
-        <h3>About Me</h3>
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-container">
+                <h1 class="logo-heading">Arundhati Vibhute</h1>
+                <img src="developer_icon.png" alt="Developer Icon" class="logo-image">
+
+            </div>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars hamburger-icon"></i>
+            <i class="fas fa-times cross-icon"></i>
+        </div>
+        <div class="menu">
+            <ul class="menu-list">
+
+                <li class="menu-list-items">
+                    <a class="links" href="#welcome-section">
+                        Portfolio
+                    </a>
+                </li>
+                <li class="menu-list-items">
+                    <a class="links" href="#Certifications">
+                        Certifications
+                    </a>
+                </li>
+                <li class="menu-list-items">
+                    <a class="links" href="#Skills">
+                        Skills
+                    </a>
+                </li>
+                <li class="menu-list-items">
+                    <a class="links" href="#contact">
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="welcome-section">
+        <div class="headings">
+
+            <h3 class="greet-heading">Hello, I'm</h3>
+
+            <h4 class="sub-heading">
+                A Fullstack Developer with 3 years of Experience.
+            </h4>
+        </div>
+
+        <h3>Hello ,I am A Fullstack Developer with 3 years of Experience.</h3>
         <article>
             <p>
                 Results-driven Software Engineer with 3+ years of experience in optimizing, automating, and maintaining business operations in cloud environments. <br />
@@ -23,68 +70,85 @@
                 Adept at managing cloud infrastructure using AWS, ensuring fault tolerance, scalability, and performance optimization of web applications.
             </p>
         </article>
-     </section>
+    </section>
 
-        <section border>
-            <h3>Certifications</h3>
-            <ul class="cert-list">
-                <li>AWS Certified Cloud Developer</li>
-                <li>AWS Certified Cloud Practitioner</li>
-            </ul>
-        </section>
+    <section id="Certifications ">
+        <h3>Certifications</h3>
+        <ul class="cert-list">
+            <li>AWS Certified Cloud Developer</li>
+            <li>AWS Certified Cloud Practitioner</li>
+        </ul>
+    </section>
 
-        <section>
-            <h3>Skills:</h3>
-            <table border="1">
-                <tr>
-                    <th>Web Technologies</th>
-                    <th>Programming Languages</th>
-                    <th>AWS Cloud Services</th>
+    <section id="skills">
+        <h3>Skills:</h3>
+        <table class="skills-table">
+            <tr>
+                <th><i class="fas fa-code"></i> Web Technologies</th>
+                <th><i class="fas fa-laptop-code"></i> Programming Languages</th>
+                <th><i class="fas fa-cloud"></i> AWS Cloud Services</th>
+            </tr>
+            <tr>
+                <td><i class="fab fa-html5"></i> HTML</td>
+                <td><i class="fab fa-java"></i> Java</td>
+                <td><i class="fab fa-aws"></i> EC2</td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-css3-alt"></i> CSS</td>
+                <td>-</td>
+                <td><i class="fas fa-database"></i> DynamoDB</td>
+            </tr>
+            <tr>
+                <td><i class="fab fa-js"></i> JavaScript</td>
+                <td>-</td>
+                <td><i class="fas fa-bell"></i> CloudWatch, Lambda</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td><i class="fas fa-box-open"></i> S3</td>
+            </tr>
+        </table>
+    </section>
 
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                    <td>JAVA</td>
-                    <td>EC2</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td></td>
-                    <td>Dynamodb</td>
-                </tr>
-                <tr>
-                    <td>Javascript</td>
-                    <td></td>
-                    <td>Cloudwatch,lambada</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>s3</td>
-                </tr>
 
-            </table>
-        </section>
-
-        <div class="form-container">
-
-            <h2>Contact Me</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required style="margin :10px">
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required style= "margin :10px">
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required style="margin:10px"></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
+    <section class="contact" id="contact">
+        <div class="contact-heading">
+            <h1 class="my-heading text-center">Contact Me</h1>
         </div>
-
-        <footer>
-            <p>&copy; 2025 My Portfolio Full Stack Developer</p>
-        </footer>
+        <div class="contact-content">
+            <div class="contact-form-container">
+                <h1 class="greet-heading">Get In Touch</h1>
+                <form class="contact-form">
+                    <input class="form-controls" type="text" placeholder="Your Name">
+                    <input class="form-controls" type="text" placeholder="Your Email">
+                    <input class="form-controls" type="text" placeholder="Your Phone">
+                    <textarea class="form-controls" placeholder="Write your message" name="message" id="" cols="30"
+                              rows="10">
+                      </textarea>
+                    <input class="form-btn btn common-btn" type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content text-center">
+            <h4>
+                Copyright © 2025 All rights reserved |
+                FullStack Developer Portfolio
+            </h4>
+            <div class="social-links">
+                <div class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.linkedin.com/in/arundhati-vibhute-17702819/" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
